@@ -6,8 +6,8 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      robots: [
-      ]
+      robots: [],
+      searchField: ''
     };
   }
 
@@ -18,8 +18,17 @@ class App extends React.Component {
   }
 
   render() {
+    const { robots, searchField } = this.state;
+    const filteredRobots = robots.filter(robot => robot.name.toLowerCase().includes(searchField.toLowerCase()));
     return (<div className="App" >
-      <CardList robots={this.state.robots} />
+      <input
+        type="search"
+        placeholder="Search Robots"
+        onChange={e => this.setState({
+          searchField: e.target.value
+        }, () => console.log(this.state))} />
+
+      <CardList robots={filteredRobots} />
 
     </div >)
   };
