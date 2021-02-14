@@ -1,6 +1,7 @@
 import React from 'react';
 import { CardList } from './components/card-list/card-list.component'
 import './App.css';
+import { SearchBox } from './search-box/search-box.component';
 
 class App extends React.Component {
   constructor() {
@@ -21,16 +22,15 @@ class App extends React.Component {
     const { robots, searchField } = this.state;
     const filteredRobots = robots.filter(robot => robot.name.toLowerCase().includes(searchField.toLowerCase()));
     return (<div className="App" >
-      <input
-        type="search"
+
+      <SearchBox
         placeholder="Search Robots"
-        onChange={e => this.setState({
-          searchField: e.target.value
-        }, () => console.log(this.state))} />
+        handleChange={e => this.setState({ searchField: e.target.value })} />
 
       <CardList robots={filteredRobots} />
 
-    </div >)
+    </div >
+    )
   };
 }
 
