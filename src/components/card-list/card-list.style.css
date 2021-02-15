@@ -1,13 +1,12 @@
 .card-list {
   /* width: 85vw; */
   height: auto;
-  background: cyan;
-  margin: 10%;
+  /* background: cyan; */
+  margin: 0% 10%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: left;
-
+  justify-content: space-evenly;
   /* grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px; */
 }
