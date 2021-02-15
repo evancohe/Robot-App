@@ -1,8 +1,13 @@
 .card-list {
   /* width: 85vw; */
-  /* background: cyan; */
-  margin: 3%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  height: auto;
+  background: cyan;
+  margin: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+
+  /* grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px; */
 }
