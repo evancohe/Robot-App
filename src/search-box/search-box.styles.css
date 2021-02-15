@@ -1,5 +1,7 @@
 .search {
   font-family: "Indie Flower", cursive;
+  font-size: 30px;
+  text-align: center;
   -webkit-appearance: none;
   background: #487e95;
   color: white;
@@ -8,7 +10,7 @@
   padding: 10px;
   width: 150;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin: 0%;
 }
 
 ::placeholder {

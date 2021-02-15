@@ -1,6 +1,6 @@
 .card-container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: row; */
   background-color: #d9dab0;
   border: 2px solid #214151;
   border-radius: 15px;
@@ -10,6 +10,11 @@
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.1s ease-out;
+}
+
+.card-container img {
+  width: 100%;
+  height: auto;
 }
 
 .card-container:hover {
