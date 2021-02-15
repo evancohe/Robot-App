@@ -1,6 +1,6 @@
 .card-list {
   /* width: 85vw; */
-  background: cyan;
+  /* background: cyan; */
   margin: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
