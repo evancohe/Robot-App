@@ -22,11 +22,10 @@ class App extends React.Component {
     const { robots, searchField } = this.state;
     const filteredRobots = robots.filter(robot => robot.name.toLowerCase().includes(searchField.toLowerCase()));
     return (<div className="App" >
-
+      <h1 className="title">Robots Search</h1>
       <SearchBox
         placeholder="Search Robots"
         handleChange={e => this.setState({ searchField: e.target.value })} />
-
       <CardList robots={filteredRobots} />
 
     </div >
